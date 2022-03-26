@@ -6,7 +6,7 @@
     tasks:
       - name: ensure AWSDRS is at the latest version
         yum:
-          name: httpd
+          name: aws-elastic-disaster-recovery-agent
           state: latest
       - name: ensure AWSDRS is running
         service:
