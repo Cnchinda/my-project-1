@@ -4,11 +4,11 @@
     become: yes
     become_user: root
     tasks:
-      - name: ensure AWSDRS is at the latest version
+      - name: ensure apache is at the latest version
         yum:
-          name: aws-elastic-disaster-recovery-agent
+          name: httpd
           state: latest
-      - name: ensure AWSDRS is running
+      - name: ensure apache is running
         service:
-          name: aws-elastic-disaster-recovery-agent
+          name: httpd
           state: started
