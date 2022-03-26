@@ -1,5 +1,5 @@
 ---
-  - name: Playbook
+  - name: ansible
     hosts: localhost
     become: yes
     become_user: root
